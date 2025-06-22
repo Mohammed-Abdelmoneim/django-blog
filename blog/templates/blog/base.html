@@ -10,6 +10,14 @@
 </head>
 <body>
   <div id="content">
+    <div style="display:flex; gap:1rem">
+      <h2>
+        <a href="{% url 'blog:post_list' %}">Home</a>
+      </h2>
+      <h2>
+        <a href="{% url 'blog:post_search' %}">Search</a>
+      </h2>
+    </div>
     {% block content %}
     {% endblock %}
   </div>
